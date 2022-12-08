@@ -1,5 +1,5 @@
 resource "yandex_compute_instance" "node-1" {
-  name = "node-1-ubuntu-2204-lts"
+  name = "node-1-jenkins"
   platform_id = "standard-v2"
 
   depends_on = [ yandex_vpc_subnet.subnet-c-1 ]
@@ -16,7 +16,7 @@ resource "yandex_compute_instance" "node-1" {
 
   boot_disk {
     initialize_params {
-      image_id = data.yandex_compute_image.image-1-ubuntu-2204-lts.id
+      image_id = data.yandex_compute_image.image-1-jenkins.id
       size = 15
     }
   }
