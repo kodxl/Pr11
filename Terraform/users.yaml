@@ -1,0 +1,9 @@
+#cloud-config
+ssh_pwauth: no
+users:
+  - name: kod
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLx3C3JGAuatCYQVK924y3sb3O5Bf7BPJ2fWKMv92Ksf7UcPsZXO5u59UVOrx+xdGz3KvDkpwANKMwzAALEGEzXQBstZkERCTfu9NGQzcInCpV7VZHTq8FMcMl3DBiINYlc54PdywobahBDoE8ekRAobcVA2Y8dV9poQVVJKQbljE7BBO6qUabSgV8nH/YJ4V/0mchPF/XeNXNv2Hb5+dxMjd14l5/lMP5fqcz0JRmAi7sdZSXUFdQmVrTnNdat/1lC+A4k9PT/JR3F6CW1WuSx8XCvQB1t/LFYrAboLYpDKXoUEqB5cnk/9DJeIg7XWJUK63/4ESNjgXi1DhgoEkJ kod"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWNYcCEtgFAFbCzTEwYnQaPkHKYkqJnjgt7jDfJsQSYypW20puapC6Kamw4x51+gUeFvtTLatvzvJCxlrz2fecxUsFIZg7aZwGTsMO25paLo9MgvmXnnwiOEt9Lvdq4D2evXFAU3EETBIx7UVipKaFFrEjelHe4ehxAqaGImW591xZw1Gh+Y/E1tshfrWHCCCq0ne4QZ/0K0vZNBRNqmnDRQ7rvsNVgngRXzwa8nrtxfcji40WRx4d9KyJ8r8Jan7bLzn6djqYkBMLcbQ9d+RuQgJoOWWvjONl+6x7aO6kE8lbe+luHw3wc2q9OvSjj1M2FHgZsAGUzTnl9OV4/P2ezkfagFQiEUZYJ2jHaIU/a14QthJhID4CJvtIuzEFSGhvy6qIzRbjU2AmkJTmNuORBnR8WL0wNz3QCVPxKtMKWT7+AuFPFwuN+D1HOVhCgd6MucWgFw3OYgtyqhHGvEJBuwvJ3MjpYN+VLnIjdncoG1emv1z6BqPjEzgOKokr+q8= kod"
